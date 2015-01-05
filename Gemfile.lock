@@ -1,6 +1,10 @@
 GIT
   remote: git://github.com/EppO/rolify.git
+<<<<<<< HEAD
   revision: 5856f46e05b17b36f7d3e3b9ee0bd66c52537f13
+=======
+  revision: d3a780fd8b9d68097ba9e4873bad99e8c3f3141e
+>>>>>>> origin/master
   specs:
     rolify (3.4.1)
 
