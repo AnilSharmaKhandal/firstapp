@@ -31,7 +31,6 @@ devise_scope :user do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-
   root to: "home#index"
   
   # Example of regular route:
