@@ -60,5 +60,9 @@ Authority.configure do |config|
   # config.logger = Logger.new('log/authority.log')  # Use this file
   # config.logger = Logger.new('/dev/null')          # Don't log at all (on a Unix system)
 
+<<<<<<< HEAD
  
 end
+=======
+end
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12

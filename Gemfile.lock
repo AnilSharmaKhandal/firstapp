@@ -1,11 +1,15 @@
 GIT
   remote: git://github.com/EppO/rolify.git
+<<<<<<< HEAD
   revision: d3a780fd8b9d68097ba9e4873bad99e8c3f3141e
+=======
+  revision: 5856f46e05b17b36f7d3e3b9ee0bd66c52537f13
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12
   specs:
     rolify (3.4.1)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.1.8)
       actionpack (= 4.1.8)

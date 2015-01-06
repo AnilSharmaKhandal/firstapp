@@ -11,11 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150105193455) do
+=======
+ActiveRecord::Schema.define(version: 20150102230909) do
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "posts", force: true do |t|
     t.text     "content"
     t.integer  "user_id"
@@ -25,6 +30,8 @@ ActiveRecord::Schema.define(version: 20150105193455) do
 
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
+=======
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12
   create_table "roles", force: true do |t|
     t.string   "name"
     t.integer  "resource_id"

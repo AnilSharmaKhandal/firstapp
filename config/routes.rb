@@ -7,6 +7,7 @@ devise_for :users, controllers: { sessions: "users/sessions" }
    {
     sessions: 'sessions'
 
+<<<<<<< HEAD
   }
 
 
@@ -14,12 +15,27 @@ devise_for :users, controllers: { sessions: "users/sessions" }
   root to: "static_pages#home"
   get    'help'    => 'static_pages#help'
   get    'about'   => 'static_pages#about'
+=======
+  #get 'home/index'
+
+devise_for :users, controllers: { sessions: "users/sessions" }
+   {
+    sessions: 'sessions'
+
+  }
+
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12
 
 
 devise_scope :user do
   get "sign_in", to: "users/sessions#new"
   get "sign_in", to: "users/sessions#create"
+<<<<<<< HEAD
   get "destroy_user_session", to: "users/sessions#destroy" 
+=======
+  get "destroy_user_session", to: "users/sessions#destroy"
+  
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12
  
 
   get "new_user_registration", to: "users/registrations#new"

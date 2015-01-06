@@ -12,12 +12,21 @@
 <body>
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
+<<<<<<< HEAD
      <%= link_to "first app", 'root_path', id: "logo" %>
           <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Help", help_path %></li>
         <li>
+=======
+     <%= link_to "first app", '#', id: "logo" %>
+          <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "About", static_pages_about_path %></li>
+        <li><%= link_to "Help", static_pages_help_path %></li>
+
+>>>>>>> c31a55015220cef96bf578cb8fbfd6b3235f5b12
         <% if user_signed_in? %>
           <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> 
          <% else %>
