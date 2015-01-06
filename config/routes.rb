@@ -1,8 +1,6 @@
-Rails.application.routes.draw do
-  get 'static_pages/help'
-
-  get 'static_pages/about'
-
+Rails.application.routes.draw do  
+  #get 'static_pages/help'
+  #get 'static_pages/about'
   #get 'home/index'
 
 devise_for :users, controllers: { sessions: "users/sessions" }
@@ -13,11 +11,15 @@ devise_for :users, controllers: { sessions: "users/sessions" }
 
 
 
+  root to: "static_pages#home"
+  get    'help'    => 'static_pages#help'
+  get    'about'   => 'static_pages#about'
+
+
 devise_scope :user do
   get "sign_in", to: "users/sessions#new"
   get "sign_in", to: "users/sessions#create"
-  get "destroy_user_session", to: "users/sessions#destroy"
-  
+  get "destroy_user_session", to: "users/sessions#destroy" 
  
 
   get "new_user_registration", to: "users/registrations#new"
@@ -31,7 +33,7 @@ devise_scope :user do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root to: "home#index"
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,15 +1,11 @@
 GIT
   remote: git://github.com/EppO/rolify.git
-<<<<<<< HEAD
-  revision: 5856f46e05b17b36f7d3e3b9ee0bd66c52537f13
-=======
   revision: d3a780fd8b9d68097ba9e4873bad99e8c3f3141e
->>>>>>> origin/master
   specs:
     rolify (3.4.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (4.1.8)
       actionpack (= 4.1.8)
@@ -78,7 +74,7 @@ GEM
     minitest (5.5.0)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
-    pg (0.18.0.pre20141117110243-x86-mingw32)
+    pg (0.18.0-x86-mingw32)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -134,7 +130,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2014.10)
       tzinfo (>= 1.0.0)
-    uglifier (2.6.0)
+    uglifier (2.6.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     warden (1.2.3)
