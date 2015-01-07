@@ -1,4 +1,4 @@
-Authority.configure do |config|
+ Authority.configure do |config|
 
   # USER_METHOD
   # ===========
