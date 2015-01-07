@@ -17,6 +17,12 @@ Rails.application.routes.draw do
   resources :users
   resources :posts,          only: [:create, :destroy]
 
+
+  resource :profile,         only: [:show, :index,:destroy]
+  get "profile", to: "profile#show"
+
+
+
   devise_scope :user do
   get "sign_in", to: "users/sessions#new"
   get "sign_in", to: "users/sessions#create"

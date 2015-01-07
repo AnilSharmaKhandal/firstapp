@@ -5,7 +5,7 @@ GIT
     rolify (3.4.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (4.1.8)
       actionpack (= 4.1.8)
@@ -74,7 +74,7 @@ GEM
     minitest (5.5.0)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
-    pg (0.18.0-x86-mingw32)
+    pg (0.18.1-x86-mingw32)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %> | First App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+ 
+     <%= link_to "first app", 'root_path', id: "logo" %>
+          <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+        <li>
+ 
+     <%= link_to "first app", '#', id: "logo" %>
+          <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "About", static_pages_about_path %></li>
+        <li><%= link_to "Help", static_pages_help_path %></li>
+
+ 
+        <% if user_signed_in? %>
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> 
+         <% else %>
+			 <%= link_to "Sign in", sign_in_path %> 
+</div>
+<% end %>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
+
+
+<%= yield %>
+
+</body>
+</html>
